@@ -26,4 +26,18 @@
 // E ricordiamoci che console.log() è nostro amico!
 // Buon lavoro! :muscolo:
 
-alert();
+// 0 Creazione dell'array di oggetti con tutti i dati
+//
+// 1 Creare un ciclo che stampi su console oggetti, chiavi e valori di tutto l'array
+//      PER ogni elemento dell'array
+//          PER ogni chiave fare console.log di chiave e valore abbinati
+//
+// 2 Prelevare l'elemento nel DOM dove inserire il contenuto
+//      PER ogni elemento dell'array
+//          PER ogni chiave creare un nuovo elemento che contenga un testo con al suo interno chiave e valore abbinati
+//
+// bonus1 Sostuire all'inserimento della stringa con il file immagine il tag IMG con il percorso personalizzato con il valore della chiave foto
+//
+// bonus2 Creare una card statica di prova in html e css
+//      Prendere spunto dalla card statrica in html per creare in JS gli elementi del DOM necessari
+
