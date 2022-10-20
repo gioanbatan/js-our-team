@@ -41,6 +41,8 @@
 // bonus2 Creare una card statica di prova in html e css
 //      Prendere spunto dalla card statrica in html per creare in JS gli elementi del DOM necessari
 
+
+// Team data
 const teamArray = [
     {
         name: "Wayne Barnett",
@@ -74,8 +76,11 @@ const teamArray = [
     }
 ]
 
-// console.log("array", teamArray, teamArray.length)
+// Output elements
+const listElement = document.getElementById("teamList");
+console.log(listElement);
 
+// console.log("array", teamArray, teamArray.length)
 readObjectArray(teamArray);
 
 
@@ -85,10 +90,12 @@ function readObjectArray (objectsArray) {
     // Per ogni indice dell'array dato esegui il ciclo di lettura chiave-valore di goni oggeto
     for (let i = 0; i < objectsArray.length; i++) {
         thisObject = objectsArray[i];
-        console.log("-----");
         // Per ogni oggetto mostra chiave-valore
         for (objectKey in thisObject) {
             console.log(objectKey, ":", thisObject[objectKey]);
+            
+            listElement.innerHTML += `<li>${objectKey}: ${thisObject[objectKey]}` 
         }
+        console.log("-----");
     }
 }

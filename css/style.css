@@ -10,5 +10,14 @@ body {
 
 html {
     font-size: 100%;
+    color: brown;
     font-family: sans-serif;
+}
+
+li {
+    padding: 1rem;
+}
+
+li:nth-child(3n) {
+    border-bottom: 1px dashed brown;
 }
