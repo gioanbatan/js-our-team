@@ -41,3 +41,37 @@
 // bonus2 Creare una card statica di prova in html e css
 //      Prendere spunto dalla card statrica in html per creare in JS gli elementi del DOM necessari
 
+const teamArray = [
+    {
+        name: "Wayne Barnett",
+        role: "Founder & CEO",
+        picture: "wayne-barnett-founder-ceo.jpg"
+    },
+    {
+        name: "Angela Caroll",
+        role: "Chief Editor",
+        picture: "angela-caroll-chief-editor.jpg"
+    },
+    {
+        name: "Walter Gordon",
+        role: "Office Manager",
+        picrture: "walter-gordon-office-manager.jpg"
+    },
+    {
+        name: "Angela Lopez",
+        role: "Social Media Manager",
+        picrture: "angela-lopez-social-media-manager.jpg"
+    },
+    {
+        name: "Scott",
+        role: "Estrada",
+        picrture: "scott-estrada-developer.jpg"
+    },
+    {
+        name: "Barbara Ramos",
+        role: "Graphic Designer",
+        picrture: "barbara-ramos-graphic-designer.jpg"
+    }
+]
+
+console.log("array", teamArray, teamArray.length)
