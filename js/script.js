@@ -93,8 +93,12 @@ function readObjectArray (objectsArray) {
         // Per ogni oggetto mostra chiave-valore
         for (objectKey in thisObject) {
             console.log(objectKey, ":", thisObject[objectKey]);
-            
-            listElement.innerHTML += `<li>${objectKey}: ${thisObject[objectKey]}` 
+            // Stringhe nel DOM
+            if (!objectKey === "picture") {
+                listElement.innerHTML += `<li>${objectKey}: ${thisObject[objectKey]}`;
+            } else {
+                listElement.innerHTML += `<li><img src="img/${thisObject[objectKey]}" alt="${thisObject[objectKey]}">`
+            }
         }
         console.log("-----");
     }
