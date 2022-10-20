@@ -55,23 +55,40 @@ const teamArray = [
     {
         name: "Walter Gordon",
         role: "Office Manager",
-        picrture: "walter-gordon-office-manager.jpg"
+        picture: "walter-gordon-office-manager.jpg"
     },
     {
         name: "Angela Lopez",
         role: "Social Media Manager",
-        picrture: "angela-lopez-social-media-manager.jpg"
+        picture: "angela-lopez-social-media-manager.jpg"
     },
     {
         name: "Scott",
         role: "Estrada",
-        picrture: "scott-estrada-developer.jpg"
+        picture: "scott-estrada-developer.jpg"
     },
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
-        picrture: "barbara-ramos-graphic-designer.jpg"
+        picture: "barbara-ramos-graphic-designer.jpg"
     }
 ]
 
-console.log("array", teamArray, teamArray.length)
+// console.log("array", teamArray, teamArray.length)
+
+readObjectArray(teamArray);
+
+
+// FUNCTIONS
+
+function readObjectArray (objectsArray) {
+    // Per ogni indice dell'array dato esegui il ciclo di lettura chiave-valore di goni oggeto
+    for (let i = 0; i < objectsArray.length; i++) {
+        thisObject = objectsArray[i];
+        console.log("-----");
+        // Per ogni oggetto mostra chiave-valore
+        for (objectKey in thisObject) {
+            console.log(objectKey, ":", thisObject[objectKey]);
+        }
+    }
+}
